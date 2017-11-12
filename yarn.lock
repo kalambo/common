@@ -85,9 +85,9 @@ prettier@^1.8.2:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.8.2.tgz#bff83e7fd573933c607875e5ba3abbdffb96aeb8"
 
-rgo@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.2.0.tgz#9b0b60fa775412f5309123e610c7cf1683ef551e"
+rgo@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.2.1.tgz#af84d25747c58135c71b12b091e0a9e013f87bfb"
   dependencies:
     clone "^2.1.1"
     deep-equal "^1.0.1"
@@ -104,9 +104,9 @@ safe-buffer@^5.0.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
-typescript@2.5.3:
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.5.3.tgz#df3dcdc38f3beb800d4bc322646b04a3f6ca7f0d"
+typescript@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.1.tgz#ef39cdea27abac0b500242d6726ab90e0c846631"
 
 wrappy@1:
   version "1.0.2"
