@@ -1,3 +1,5 @@
+import { Scalar } from 'rgo';
+
 export const noUndef = (v: any) => (v === undefined ? null : v);
 
 export const transformValue = (value: any, transform?: 'email' | 'url') => {
@@ -18,4 +20,19 @@ export const getDateString = date => {
   const mm = pad(date.getMonth() + 1);
   const yy = `${date.getFullYear()}`.substring(2);
   return `${dd}/${mm}/${yy}`;
+};
+
+const getValueStringSub = (value: any, scalar: Scalar) => {
+  if (value === undefined) return '';
+  else if (value === null) return '---';
+  else if (scalar === 'boolean') return value ? 'Yes' : 'No';
+  else if (scalar === 'date') return getDateString(value);
+  return `${value}`;
+};
+export const getValueString = (value: any, scalar: Scalar) => {
+  if (Array.isArray(value)) {
+    if (value.length === 0) return '---';
+    return value.map(v => getValueStringSub(v, scalar)).join(', ');
+  }
+  return getValueStringSub(value, scalar);
 };

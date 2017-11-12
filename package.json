@@ -19,6 +19,7 @@
     "typescript": "2.5.3"
   },
   "dependencies": {
+    "base-x": "^3.0.2",
     "rgo": "^0.2.0"
   }
 }
