@@ -21,9 +21,8 @@ export const timestamps = enhancers.mapUpdates(async (_, id, record) => {
   if (record) {
     const time = new Date();
     return {
-      ...id ? {} : { createdat: time },
-      modifiedat: time,
-      ...record,
+      ...id || record.createdat ? {} : { createdat: time },
+      ...record.modifiedat ? {} : { modifiedat: time },
     };
   }
 }) as Enhancer;
