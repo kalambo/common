@@ -1,4 +1,5 @@
 import { Scalar } from 'rgo';
+import * as moment from 'moment';
 
 export const noUndef = (v: any) => (v === undefined ? null : v);
 
@@ -13,20 +14,11 @@ export const transformValue = (value: any, transform?: 'email' | 'url') => {
   return value;
 };
 
-const pad = s => (!`${s}`[1] ? `0${s}` : `${s}`);
-export const getDateString = date => {
-  if (!date) return '';
-  const dd = pad(date.getDate());
-  const mm = pad(date.getMonth() + 1);
-  const yy = `${date.getFullYear()}`.substring(2);
-  return `${dd}/${mm}/${yy}`;
-};
-
 const getValueStringSub = (value: any, scalar: Scalar) => {
   if (value === undefined) return '';
   else if (value === null) return '---';
   else if (scalar === 'boolean') return value ? 'Yes' : 'No';
-  else if (scalar === 'date') return getDateString(value);
+  else if (scalar === 'date') return moment(value).format('DD/MM/YY');
   return `${value}`;
 };
 export const getValueString = (value: any, scalar: Scalar) => {
