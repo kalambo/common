@@ -19,8 +19,10 @@
     "typescript": "^2.6.1"
   },
   "dependencies": {
+    "@types/node": "^8.0.53",
     "base-x": "^3.0.2",
     "knex": "^0.14.0",
+    "koa-router": "^7.3.0",
     "moment": "^2.19.2",
     "rgo": "^0.2.3"
   }
