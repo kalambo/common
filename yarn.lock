@@ -428,9 +428,9 @@ kind-of@^4.0.0:
   dependencies:
     is-buffer "^1.1.5"
 
-knex@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/knex/-/knex-0.14.0.tgz#dd4569821141429c4e6b0bb5d8068874cdb50cc3"
+knex@^0.14.1:
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-0.14.1.tgz#ba4ae5afc2824a43b392fbbc8f8a7753e356d808"
   dependencies:
     babel-runtime "^6.23.0"
     bluebird "^3.4.6"
@@ -715,9 +715,9 @@ resolve@^1.1.6, resolve@^1.1.7:
   dependencies:
     path-parse "^1.0.5"
 
-rgo@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.2.3.tgz#0839e3acc97f9e3817fea499caf68352a4c916c3"
+rgo@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.2.4.tgz#5cc22e3e1a111f6bb6161e32f95cc3bc6068c1af"
   dependencies:
     clone "^2.1.1"
     deep-equal "^1.0.1"

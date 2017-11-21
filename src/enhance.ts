@@ -4,7 +4,7 @@ import * as Knex from 'knex';
 import isValid from './isValid';
 
 export const previous = (knex: Knex) =>
-  enhancers.mapUpdates(async (type, id, _, { context }) => {
+  enhancers.onUpdate(async ({ type, id }, { context }) => {
     context.previous = context.previous || {};
     context.previous[type] = context.previous[type] || {};
     if (id) {
@@ -17,7 +17,7 @@ export const previous = (knex: Knex) =>
     }
   }) as Enhancer;
 
-export const timestamps = enhancers.mapUpdates(async (_, id, record) => {
+export const timestamps = enhancers.onUpdate(async ({ id, record }) => {
   if (record) {
     const time = new Date();
     return {
@@ -27,8 +27,8 @@ export const timestamps = enhancers.mapUpdates(async (_, id, record) => {
   }
 }) as Enhancer;
 
-export const logging = enhancers.mapUpdates(
-  async (type, id, record, { context: { previous } }) => {
+export const logging = enhancers.onUpdate(
+  async ({ type, id, record }, { context: { previous } }) => {
     const prev: Obj | null = previous[type][id!] || null;
     if (record) {
       if (id) {
@@ -49,8 +49,8 @@ export const logging = enhancers.mapUpdates(
   },
 ) as Enhancer;
 
-export const validate = enhancers.mapUpdates(
-  async (type, _, record, { schema }) => {
+export const validate = enhancers.onUpdate(
+  async ({ type, record }, { schema }) => {
     if (record) {
       for (const f of Object.keys(record)) {
         if (
