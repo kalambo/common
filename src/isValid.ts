@@ -1,5 +1,6 @@
 import { Scalar } from 'rgo';
 
+import { Obj } from './typings';
 import { transformValue } from './utils';
 
 export interface Rules {

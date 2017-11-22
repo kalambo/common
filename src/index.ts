@@ -1,7 +1,4 @@
 export { default as isValid } from './isValid';
 export { decodeId, encodeId } from './shortIds';
+export { Obj } from './typings';
 export { getValueString, noUndef, transformValue } from './utils';
-
-declare global {
-  type Obj<T = any> = { [key: string]: T };
-}

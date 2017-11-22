@@ -1,4 +1,5 @@
 import { Scalar } from 'rgo';
+import { Obj } from './typings';
 export interface Rules {
     equals?: any;
     email?: true;
