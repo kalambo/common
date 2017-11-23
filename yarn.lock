@@ -89,9 +89,9 @@ prettier@^1.8.2:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.8.2.tgz#bff83e7fd573933c607875e5ba3abbdffb96aeb8"
 
-rgo@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.3.1.tgz#2cac840d770f57f2eb0b7764e20462da847e25ee"
+rgo@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.3.2.tgz#c6ae0ab503f0353e5998ab68eda0d0f428959b8b"
   dependencies:
     clone "^2.1.1"
     deep-equal "^1.0.1"
