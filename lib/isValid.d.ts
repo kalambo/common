@@ -11,6 +11,7 @@ export interface Rules {
     lt?: string;
     gt?: string;
     options?: any[] | Obj;
+    other?: any;
 }
 export default function isValid(rules: {
     scalar: Scalar;

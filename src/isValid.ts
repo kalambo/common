@@ -14,6 +14,7 @@ export interface Rules {
   lt?: string;
   gt?: string;
   options?: any[] | Obj;
+  other?: any;
 }
 
 const formats = {
@@ -64,7 +65,7 @@ const isValidSingle = (
     if (otherValue !== null && value <= otherValue) return false;
   }
 
-  if (rules.options) {
+  if (rules.options && !rules.other) {
     if (Array.isArray(rules.options)) {
       if (!rules.options.includes(value)) return false;
     } else {
