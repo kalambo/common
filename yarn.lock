@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@types/node@^9.3.0":
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.3.0.tgz#3a129cda7c4e5df2409702626892cb4b96546dd5"
+
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
@@ -81,13 +85,13 @@ path-is-absolute@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
 
-prettier@^1.9.2:
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.9.2.tgz#96bc2132f7a32338e6078aeb29727178c6335827"
+prettier@^1.10.2:
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.10.2.tgz#1af8356d1842276a99a5b5529c82dd9e9ad3cc93"
 
-rgo@^0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.3.5.tgz#d7aa2b90f2d17b479706bba288fbb1278e80388d"
+rgo@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.3.6.tgz#1efb23d5e07b24fb30eaa71100613ce17e4d90fa"
   dependencies:
     deep-equal "^1.0.1"
     keys-to-object "^0.2.0"
