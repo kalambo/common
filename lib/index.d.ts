@@ -3,7 +3,7 @@ export { default as isValid } from './isValid';
 export { decodeId, encodeId } from './shortIds';
 export { Obj } from './typings';
 export { getValueString, noUndef, transformValue } from './utils';
-export declare const root: Window | Global;
+export declare const root: Global;
 declare global  {
     interface Window {
         rgo: Rgo;

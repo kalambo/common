@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@types/node@^9.3.0":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.3.0.tgz#3a129cda7c4e5df2409702626892cb4b96546dd5"
+"@types/node@^9.4.0":
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.0.tgz#b85a0bcf1e1cc84eb4901b7e96966aedc6f078d1"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -89,9 +89,9 @@ prettier@^1.10.2:
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.10.2.tgz#1af8356d1842276a99a5b5529c82dd9e9ad3cc93"
 
-rgo@^0.3.6:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.3.6.tgz#1efb23d5e07b24fb30eaa71100613ce17e4d90fa"
+rgo@^0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.3.7.tgz#1af028b4d3b1b72cf81efcb22a76462a588f1534"
   dependencies:
     deep-equal "^1.0.1"
     keys-to-object "^0.2.0"
@@ -107,9 +107,9 @@ safe-buffer@^5.0.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
-typescript@^2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
+typescript@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.7.1.tgz#bb3682c2c791ac90e7c6210b26478a8da085c359"
 
 wrappy@1:
   version "1.0.2"
