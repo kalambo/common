@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@types/node@^9.4.0":
-  version "9.4.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.0.tgz#b85a0bcf1e1cc84eb4901b7e96966aedc6f078d1"
+"@types/node@^9.4.6":
+  version "9.4.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.6.tgz#d8176d864ee48753d053783e4e463aec86b8d82e"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -17,8 +17,8 @@ base-x@^3.0.4:
     safe-buffer "^5.0.1"
 
 brace-expansion@^1.1.7:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.8.tgz#c07b211c7c952ec1f8efd51a77ef0d1d3990a292"
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
   dependencies:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
@@ -89,9 +89,9 @@ prettier@^1.10.2:
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.10.2.tgz#1af8356d1842276a99a5b5529c82dd9e9ad3cc93"
 
-rgo@^0.3.7:
-  version "0.3.7"
-  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.3.7.tgz#1af028b4d3b1b72cf81efcb22a76462a588f1534"
+rgo@^0.3.9:
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/rgo/-/rgo-0.3.9.tgz#7089a9266703ff5250f79707cd4af78e70a4a026"
   dependencies:
     deep-equal "^1.0.1"
     keys-to-object "^0.2.0"
@@ -107,9 +107,9 @@ safe-buffer@^5.0.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
-typescript@^2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.7.1.tgz#bb3682c2c791ac90e7c6210b26478a8da085c359"
+typescript@^2.7.2:
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.7.2.tgz#2d615a1ef4aee4f574425cdff7026edf81919836"
 
 wrappy@1:
   version "1.0.2"
