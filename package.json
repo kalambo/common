@@ -6,22 +6,25 @@
   "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
   "scripts": {
-    "prettier":
-      "prettier --single-quote --trailing-comma all --write \"src/**/*.ts\"",
+    "prettier": "prettier --write \"src/**/*.ts\"",
     "clean": "rimraf lib/*",
     "build": "yarn run clean && tsc",
     "prepare": "yarn run build"
   },
   "devDependencies": {
-    "prettier": "^1.10.2",
+    "prettier": "^1.13.7",
     "rimraf": "^2.6.2",
-    "typescript": "^2.7.2"
+    "typescript": "^2.9.2"
   },
   "dependencies": {
-    "@types/node": "^9.4.6",
+    "@types/node": "^10.5.2",
     "base-x": "^3.0.4",
-    "moment": "^2.20.1",
-    "rgo": "^0.3.9"
+    "moment": "^2.22.2",
+    "rgo": "^0.3.13"
   }
 }

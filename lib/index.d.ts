@@ -4,7 +4,7 @@ export { decodeId, encodeId } from './shortIds';
 export { Obj } from './typings';
 export { getValueString, noUndef, transformValue } from './utils';
 export declare const root: Global;
-declare global  {
+declare global {
     interface Window {
         rgo: Rgo;
     }
@@ -12,7 +12,7 @@ declare global  {
         rgo: Rgo;
     }
 }
-declare global  {
+declare global {
     namespace NodeJS {
         interface Global {
             rgo: Rgo;
