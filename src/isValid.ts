@@ -1,7 +1,15 @@
 import { Scalar } from 'rgo';
 
-import { Obj } from './typings';
-import { transformValue } from './utils';
+export const transformValue = (value: any, transform?: 'email' | 'url') => {
+  if (!transform || typeof value !== 'string') {
+    return value;
+  } else if (transform === 'email') {
+    return value.toLowerCase().replace(/\s/g, '');
+  } else if (transform === 'url') {
+    return value.toLowerCase().replace(/[^a-z0-9-]/g, '');
+  }
+  return value;
+};
 
 export interface Rules {
   equals?: any;
@@ -13,7 +21,7 @@ export interface Rules {
   maxChoices?: number;
   lt?: string;
   gt?: string;
-  options?: any[] | Obj;
+  options?: any[] | { [key: string]: any };
   other?: any;
 }
 
@@ -24,7 +32,7 @@ const formats = {
 const isValidSingle = (
   rules: { scalar: Scalar; optional?: boolean } & Rules,
   value: any,
-  values: Obj,
+  values: { [key: string]: any },
 ) => {
   if (value === null) return !!rules.optional;
 
@@ -81,7 +89,7 @@ const isValidSingle = (
 export default function isValid(
   rules: { scalar: Scalar; optional?: boolean } & Rules,
   value: any,
-  values: Obj,
+  values: { [key: string]: any },
 ) {
   if (value === null || (Array.isArray(value) && value.length === 0)) {
     return !!rules.optional;
