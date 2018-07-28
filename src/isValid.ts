@@ -29,6 +29,11 @@ const formats = {
   email: /^[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&''*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i,
 };
 
+const isEqual = (scalar, v1, v2) => {
+  if (scalar === 'date') return (v1 && v1.getTime()) === (v2 && v2.getTime());
+  return v1 === v2;
+};
+
 const isValidSingle = (
   rules: { scalar: Scalar; optional?: boolean } & Rules,
   value: any,
@@ -77,7 +82,11 @@ const isValidSingle = (
     if (Array.isArray(rules.options)) {
       if (!rules.options.includes(value)) return false;
     } else {
-      if (!Object.keys(rules.options).some(k => rules.options![k] === value)) {
+      if (
+        !Object.keys(rules.options).some(k =>
+          isEqual(rules.scalar, rules.options![k], value),
+        )
+      ) {
         return false;
       }
     }
