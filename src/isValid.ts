@@ -80,7 +80,9 @@ const isValidSingle = (
 
   if (rules.options && !rules.other) {
     if (Array.isArray(rules.options)) {
-      if (!rules.options.includes(value)) return false;
+      if (!rules.options.some(v => isEqual(rules.scalar, v, value))) {
+        return false;
+      }
     } else {
       if (
         !Object.keys(rules.options).some(k =>
